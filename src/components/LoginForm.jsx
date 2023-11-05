@@ -116,13 +116,13 @@ const handleFailure = () => {
       {errorMessage && <Alert severity="error">{errorMessage}</Alert>}
         {showLoginForm && (
           <div>
-            <GoogleOAuthProvider clientId={clientId}>
+            {/* <GoogleOAuthProvider clientId={clientId}>
         <GoogleLogin
           id="google-login-button" // Add an ID to the GoogleLogin component
           onSuccess={handleSuccess}
           onError={handleFailure}
         /> 
-      </GoogleOAuthProvider> 
+      </GoogleOAuthProvider>  */}
             <TextField
               fullWidth
               type="email"
