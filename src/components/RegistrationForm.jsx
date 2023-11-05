@@ -84,7 +84,7 @@ const RegistrationForm = ({ toggleForms }) => {
       <TextField
         fullWidth
         type="password"
-        label="Password for demo use (Vicky@2426)"
+        label="Password for demo use (Book@2426)"
         variant="outlined"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
