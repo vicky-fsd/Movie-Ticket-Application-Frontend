@@ -1,0 +1,406 @@
+*{
+  box-sizing: border-box;
+}
+
+.simple_box_modle{
+  margin: 0;
+  padding: 0;
+}
+
+
+.description_meta{
+ font-size: 12px;
+ color: #666666;
+ font-weight: 500;
+}
+
+.App {
+  text-align: center;
+}
+
+.main_image{
+  width: 100px;
+  color: white;
+}
+
+.movies_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  row-gap: 20px; 
+  margin-top: 30px;
+}
+
+.main_logo{
+  width: 100px;
+  
+  border-radius: 10px;
+  height: 55px;
+}
+.movie_poster{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.poster_container{
+  display: flex;
+  height: 89vh;
+  width: 100%;
+  padding: 20px;
+  /* background-color: #282c34; */
+  background: rgb(40,44,52);
+  /* background: linear-gradient(90deg, rgba(40,44,52,1) 0%, rgba(40,44,52,0.5557825425091911) 100%);   */
+}
+
+.description_poster{
+  height: 100%;
+  width: 315px;
+  border-radius: 10px;
+}
+
+.poster_right{
+  padding-left: 20px;
+  /* border: 1px solid rgba(255, 255, 255, 0) */
+  width: 100%;
+  color: #fff;
+  height: 100%;
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.quality_lang{
+  margin: 20px 0;
+}
+
+.poster_right .meta_info{
+  background-color: #fff;
+  color: #282c34;
+  padding: 5px 12px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.cinema_seats_container{
+  display: flex;
+  justify-content: center;
+}
+
+.seat_format td{
+  font-size: 11px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  padding: 2px;
+}
+
+.seat_format .available_seats{
+  border: 1px solid #49ba8e;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.seat_format .available_seats:hover{
+  background-color: #1ea83c;
+  color: #fff;
+}
+
+.seat_format .available_seats.selected_seat{
+  background-color: #1ea83c;
+  color: #fff;
+}
+
+.cinema_container{
+  /* border: 1px solid red; */
+  padding: 20px;
+}
+.cinema_container > div{
+  border-top: 1px solid #32343b40;
+  display: flex;
+  align-items: baseline;
+}
+.cinema_container .left_cinema{
+  width: 25vw;
+}
+.cinema_container .left_cinema>div{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.cinema_container .left_cinema>div>div{
+  display: flex;
+  align-items: center;
+}
+.cinema_container .right_cinema{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cinema_container .right_cinema>span{
+  display: flex;
+  align-items: center;
+}
+
+.info_cinema{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 10px;
+   font-size: 14px;
+   color: #34373c;
+  }
+  
+  .rate_container {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+  border-top: 1px solid #37393c5b;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.rate_container > div{
+  line-height: 3px;
+  font-size: 13px;
+}
+
+.bottom_selector{
+  background: #fff;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.already_booked{
+  background-color: #4142436d;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.seat-legends-wrapper {
+  height: 32px;
+  width: 100%;
+  left: 0;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 12%);
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  position: fixed;
+  bottom: 0;
+  z-index: 98;
+  /* border: 1px solid red; */
+}
+
+.seat-legend-container{
+  display: flex;
+  align-items: center;
+}
+.seat-legend-box{
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  border-radius: 2px;
+}
+
+.terms_conditions p{
+  margin: 0;
+  color: #888c90;
+  font-size: 14px;
+}
+
+.food_beverage_container, .payment_bill_container{
+  background-color: "#f2f2f2";
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px 0;
+}
+.left_food_container, .left_payment_container{
+  width: 68%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.right_food_container, .right_payment_container{
+  width: 32%;
+}
+.right_food_container > div, .right_payment_container{
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.food_hub{
+  height: 80vh;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+}
+.booking_summary{
+  padding: 20px;
+}
+.booking_summary .booking_tag{
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+    text-align: left;
+    color: #c02c39;
+  }
+  .flex_just{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .convenience_container *{
+    margin: 0;
+}
+.convenience_container{
+  padding: 10px 0;
+  border-bottom: 1px solid #46474953;
+  line-height: 18px;
+}
+.food_beverage_amount *{
+  margin: 0;
+}
+.food_beverage_amount{
+  padding: 10px 0;
+  line-height: 18px;
+}
+.amount_payable{
+  padding: 0 25px;
+  background-color: #fffcdc;
+}
+
+.left_payment_container{
+  padding: 10px;
+}
+.payment_form_title{
+  background-color: #F84464;
+  color: #fff;
+  padding: 10px 20px;
+}
+.left_payment_container input{
+  padding: 8px 12px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dashboard_main_container{
+  display: flex;
+  flex-wrap: wrap; /* Reverse both row and column */
+  gap: 20px;
+  justify-content: center; /* Adjust as needed */
+  padding: 20px;
+}
+
+.dashboard_cards{
+  height: 372px;
+}
+
+.dashboard_cards *{
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard_cards img{
+  width: 50%;
+  height: 100;
+  /* border: 1px solid red; */
+  object-fit: cover;
+}
+
+.card_images_container{
+  display: flex;
+}
+
+
+@media (max-width: 768px) {
+  .main_logo{
+    width: 60px;
+  }
+  .search_icon{
+    visibility: hidden;
+  }
+  .poster_container{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  /* cinema contanier */
+  .cinema_container > div{
+    flex-direction: column;
+  }
+  .cinema_container .left_cinema{
+    width: 100%;
+  }
+  .cinema_container .left_cinema>p{
+    font-size: 24px;
+    margin: 20px 0 10px 0;
+  }
+  
+  .cinema_container .right_cinema > div{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    gap: 0;
+  }
+  
+  .timing_button{
+    margin: 0;
+  }
+  
+  .info_cinema{
+    display: none;
+  }
+ 
+  .seat_format td{
+    /* font-size: 8px; */
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding: 2px;
+  }
+}
