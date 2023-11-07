@@ -404,3 +404,52 @@
     padding: 2px;
   }
 }
+
+@media (max-width: 768px) {
+  .main_logo {
+    width: 60px;
+  }
+  .search_icon {
+    visibility: hidden;
+  }
+  .poster_container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  /* cinema container */
+  .cinema_container > div {
+    flex-direction: column;
+  }
+  .cinema_container .left_cinema {
+    width: 100%;
+  }
+  .cinema_container .left_cinema > p {
+    font-size: 24px;
+    margin: 20px 0 10px 0;
+  }
+
+  .cinema_container .right_cinema > div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    gap: 0;
+  }
+
+  .timing_button {
+    margin: 0;
+  }
+
+  .info_cinema {
+    display: none;
+  }
+
+  .seat_format td {
+    /* font-size: 8px; */
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding: 2px;
+  }
+}
